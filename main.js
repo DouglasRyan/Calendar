@@ -237,6 +237,9 @@ function setMonthDate() {
                     td.className += " current"
                 }
             }
+            if (current === now.getDate()) {
+                td.className = "current"
+            }
             tr.appendChild(td)
         }
         table.appendChild(tr)
