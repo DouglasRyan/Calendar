@@ -76,7 +76,10 @@ function up() {
     upBtn.className = "upBtn"
     initWeekDate()
 }
-
+// fold.onclick=()=>{
+//     isFold=true;
+//     initWeekDate()
+// }
 //下拉展开
 function down() {
     isFold = false;
@@ -84,7 +87,10 @@ function down() {
     upBtn.className = "upBtn active"
     initMonthDate()
 }
-
+// unfold.onclick=()=>{
+//     isFold=false;
+//     initMonthDate()
+// }
 //左滑动
 function left() {
     if (isFold === true) {
@@ -100,7 +106,20 @@ function left() {
         initMonthDate();
     }
 }
-
+// pre.onclick = () => {
+//     if (isFold===true){
+//         setPreCurrentDate();
+//         text.innerText = currentDate.toLocaleDateString();
+//         initWeekDate();
+//     } else{
+//         let month = currentDate.getMonth();
+//         month = month - 1;
+//         let year = currentDate.getFullYear();
+//         currentDate.setFullYear(year);
+//         currentDate.setMonth(month);
+//         initMonthDate();
+//     }
+// }
 //右滑动
 function right() {
     if (isFold === true) {
@@ -116,7 +135,20 @@ function right() {
         initMonthDate();
     }
 }
-
+// next.onclick = ()=>{
+//     if (isFold===true) {
+//         setNextCurrentDate();
+//         text.innerText = currentDate.toLocaleDateString();
+//         initWeekDate()
+//     }else{
+//         let month = currentDate.getMonth();
+//         month = month + 1
+//         let year = currentDate.getFullYear();
+//         currentDate.setFullYear(year)
+//         currentDate.setMonth(month)
+//         initMonthDate();
+//     }
+// }
 //点击变色
 options.onclick = (e) => {
     e.preventDefault()
@@ -132,7 +164,24 @@ options.onclick = (e) => {
     }
 
 }
-
+// //table点击变色
+// table.onclick = (e)=>{
+//     e.preventDefault()
+//     if (e.target.tagName === "TD") {
+//         for(let i = 0;i<table.children.length;i++){
+//             for(let j = 0;j<table.children[i].children.length;j++){
+//                 if(table.children[i].children[j]===e.target){
+//                     e.target.className = "selected"
+//                     currentDate.setDate(e.target.innerText)
+//                 }else{
+//                     table.children[i].children[j].className = ""
+//                 }
+//             }
+//         }
+//     }
+//
+//     initDate()
+// }
 //点击今天到达今天
 toToday.onclick = (e) => {
     e.preventDefault()

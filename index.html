@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>日历</title>
+    <title>手机日历</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
@@ -13,10 +13,15 @@
 <body>
 <div id="calendar" class="rl">
     <div id="control" class="control">
+        <!--<span id="fold">fold</span>-->
+        <!--<span id="pre">pre</span>-->
         <span id="text" class="text" ></span>
+        <!--<span id="next">next</span>-->
+        <!--<span id="unfold">unfold</span>-->
         <span id="toToday" class="today">今天</span>
     </div>
     <div id="calendarBody" class="calendarBody"></div>
+    <!--<div class="tip"></div>-->
     <div>
         <img
                 id="dropBtn"
@@ -33,11 +38,11 @@
                 border="0"
         />
     </div>
-    <!-- <div id="options" class="options">
+    <div id="options" class="options">
         <span>已设置提醒</span>
         <span>创建时间</span>
         <span>最后发言时间</span>
-    </div> -->
+    </div>
 </div>
 </body>
 <script src="./main.js"></script>
